@@ -1,0 +1,10 @@
+name: Feature request
+description: Suggest an improvement to Five Finger Rebate.
+body:
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What would you like to improve?
+      description: Describe the problem and how your suggestion would help.
+    validations:
+      required: true

@@ -1,0 +1,39 @@
+name: Bug report
+description: Report missing loot, incorrect earnings, or UI problems.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        In game, use `/ffr report` to prepare a report link with diagnostics.
+        Review everything before submitting. Do not attach your full WTF folder or saved variables.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Explain what you expected and what actually happened.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Enter a dungeon...
+        2. Pickpocket...
+        3. Open the tracker...
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Addon diagnostics
+      description: Filled by the in-game report link, or paste the text from /ffr report.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Relevant setup
+      description: Dungeon or outdoor area? Auto-loot addon? Vendor or AH? Include a cropped screenshot or Lua error if helpful, with personal details removed.

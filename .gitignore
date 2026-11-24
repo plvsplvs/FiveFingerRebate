@@ -1,0 +1,9 @@
+*.zip
+/dist/
+.DS_Store
+__pycache__/
+.env
+.env.*
+*.log
+/WTF/
+/SavedVariables/

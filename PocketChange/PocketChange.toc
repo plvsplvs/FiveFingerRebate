@@ -1,0 +1,15 @@
+## Interface: 16001
+## Title: Five Finger Rebate
+## Notes: Tracks coins and items from Pick Pocket and Battered Junkboxes.
+## Version: 1.5.0-beta.1
+## Author: plvsplvs
+## X-Website: https://github.com/plvsplvs/FiveFingerRebate
+## X-Issues: https://github.com/plvsplvs/FiveFingerRebate/issues
+## SavedVariablesPerCharacter: PocketChangeDB
+## IconTexture: Interface\Icons\INV_Misc_Bag_11
+
+PocketChange.lua
+Items.lua
+Sales.lua
+UI.lua
+Reports.lua

@@ -1,0 +1,31 @@
+name: Check and package
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Install Lua tooling
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lua5.1 liblua5.1-0-dev luarocks
+          sudo luarocks --lua-version=5.1 install luacheck 1.2.0
+      - name: Lint
+        run: luacheck PocketChange tests
+      - name: Test
+        run: |
+          lua5.1 tests/pocket_change_test.lua
+          lua5.1 tests/ui_test.lua
+          lua5.1 tests/sales_test.lua
+      - name: Package
+        run: python3 scripts/package.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: FiveFingerRebate
+          path: dist/*.zip
+          if-no-files-found: error
