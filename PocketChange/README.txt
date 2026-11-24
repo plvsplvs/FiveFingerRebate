@@ -1,4 +1,4 @@
-Five Finger Rebate 1.5.0-beta.1
+Five Finger Rebate 1.5.0-beta.2
 
 For WoW Forever 1.60.1 (interface 16001). No dependencies.
 

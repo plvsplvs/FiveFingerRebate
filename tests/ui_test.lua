@@ -59,7 +59,7 @@ assert(loadfile('PocketChange/Items.lua'))('PocketChange', ns)
 assert(loadfile('PocketChange/UI.lua'))('PocketChange', ns)
 function GetBuildInfo() return '1.60.1', '71037', 'date', 16001 end
 function GetLocale() return 'enUS' end
-C_AddOns = { GetAddOnMetadata = function() return '1.5.0-beta.1' end }
+C_AddOns = { GetAddOnMetadata = function() return '1.5.0-beta.2' end }
 ChatFontNormal = 'ChatFontNormal'
 assert(loadfile('PocketChange/Reports.lua'))('PocketChange', ns)
 local function hasText(fragment)

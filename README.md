@@ -10,7 +10,7 @@ A rogue's ledger for **WoW Forever**: track stolen coins, pocket loot, junkbox c
 - Separate pocket coins, Battered Junkbox coins, vendor sales, and collected AH proceeds.
 - Item icons, tooltips, search, quantity/value sorting, and expandable mob-source breakdowns.
 - Observed loot percentages, historical vendor estimates, and the last 20 completed runs.
-- A dark rogue-themed tracker, minimap button, and MinimapButtonBag compatibility.
+- Standard WoW frames and buttons with dagger details, gold headings, and subtle poison-green accents; minimap button and MinimapButtonBag compatibility.
 - An in-game bug reporter that prepares a GitHub issue link for you to review and submit.
 
 ## Install

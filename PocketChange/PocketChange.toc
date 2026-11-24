@@ -1,7 +1,7 @@
 ## Interface: 16001
 ## Title: Five Finger Rebate
 ## Notes: Tracks coins and items from Pick Pocket and Battered Junkboxes.
-## Version: 1.5.0-beta.1
+## Version: 1.5.0-beta.2
 ## Author: plvsplvs
 ## X-Website: https://github.com/plvsplvs/FiveFingerRebate
 ## X-Issues: https://github.com/plvsplvs/FiveFingerRebate/issues
